@@ -1,0 +1,124 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+.page1{
+    background-image: url(../img/hero-bg.jpg);
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.page2{
+    background-color: #f2f2f2;
+}
+.top{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.book{
+    margin-top: 40px;
+}
+.description{
+    margin-top: 55px;
+    margin-left: 50px;
+    margin-bottom: 55px;
+}
+.number{
+    margin-bottom: 55px;
+}
+.page3{
+    background-color: #bdb8b8;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.image-side{
+    width: 50%;
+}
+.text-side{
+    width: 50%;
+    margin: auto;
+    padding-left: 50px;
+}
+.quality{
+    color: #104e92;
+    font-size: 85px;
+    font-weight: 750;
+}
+.company{
+    font-weight: 500;
+}
+.services{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 50px;
+}
+.ico{
+    background-color: red;
+    border: unset;
+    padding: 15px 15px;
+    border-radius: 40px;
+}
+.page5{
+    background-color: #104e92;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.text-side2{
+    width: 50%;
+    margin: auto;
+}
+.about{
+    margin-left: 200px;
+    font-weight: 300;
+}
+.details{
+    text-align: center;
+    padding-left: 20px;
+    font-size: 75px;
+    font-weight: 400;
+}
+.detail{
+    text-align: center;
+    padding-left: 20px;
+    font-size: 80px;
+    font-weight: 760;
+}
+.image-side2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: initial;
+}
+.rows{
+    display: flex;
+    flex-direction: row;
+}
+.columns{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 25%;
+    height: 10%;
+}
+.page6{
+    text-align: center;
+    margin: 55px;
+}
+.todo{
+    margin-bottom: 35px;
+}
+.mission{
+    font-size: 30px;
+    font-weight: 200;
+}
+.call{
+    border: 3px solid black;
+
+}
