@@ -223,3 +223,8 @@
         margin: 55px 0;
     }
 }
+@media (max-width: 320px){
+    .pics{
+        width: 250px;
+    }
+}
