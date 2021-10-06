@@ -9,6 +9,12 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.hero-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 90px;
+}
 .hero-text h1{
     font-weight: 800;
 }
