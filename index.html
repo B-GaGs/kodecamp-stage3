@@ -1,268 +1,120 @@
-*, html, body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} 
-.page1{
-    background-image: url(../img/hero-bg.jpg);
-    background-position: 50% 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.hero-text{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding-left: 90px;
-}
-.hero-text h3{
-    font-size: 70px;
-    font-weight: 350;
-}
-.hero-text h1{
-    font-weight: 950;
-    font-size: 85px;
-    border-bottom: 12px solid white;
-    padding-bottom: 16px;
-}
-.page2{
-    background-color: #f2f2f2;
-}
-.top{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.book{
-    margin-top: 40px;
-}
-.description{
-    margin-top: 55px;
-    margin-left: 50px;
-    margin-bottom: 55px;
-}
-.number{
-    margin-bottom: 55px;
-}
-.page3{
-    background-color: #bdb8b8;
-    height: 100%;
-}
-.evening{
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-}
-.image-side{
-    width: 50%;
-}
-.text-side{
-    width: 50%;
-    margin: auto;
-    padding-left: 50px;
-}
-.quality{
-    color: #104e92;
-    font-size: 85px;
-    font-weight: 750;
-}
-.company{
-    font-weight: 500;
-}
-.page4{
-    margin-bottom: 5em;
-}
-.services{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-weight: 600;
-    font-size: 50px;
-}
-.long{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-.brush{
-    width: 32%;
-}
-.wire{
-    width: 32%;
-}
-.screw{
-    width: 36%;
-}
-.ico{
-    background-color: red;
-    border: unset;
-    padding: 15px 15px;
-    border-radius: 40px;
-}
-.page{
-    background-color: #104e92;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-.test{
-    width: 80%;
-    display: flex;
-}
-.night{
-    width: 50%;
-    margin-right: 1em;
-}
-.about{
-    font-weight: 300;
-}
-.detal{
-    text-align: left;
-    font-size: 75px;
-    font-weight: 400;
-}
-.image-container{
-    height: 10%;
-    width: 60%;
-    margin-left: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-}
-.image-container img{
-    margin-right: 2em;
-    margin-bottom: 2em;
-}
-.page6{
-    text-align: center;
-    margin: 55px;
-}
-.todo{
-    margin-bottom: 35px;
-}
-.mission{
-    font-size: 30px;
-    font-weight: 200;
-}
-.call{
-    border: 3px solid black;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Bootstrap</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css"
+</head>
+<body>
+    <nav class="container navbar">
+        <a href="" class="fs-1 text-secondary text-decoration-none">Logo</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+    </nav>
+    <section class="page1 vh-100">
+        <div class="container">
+            <div class="hero-text pt-5 col-12 col-md-6 col-lg-6">
+                <h3 class="text-white">HOUSE REPAIR</h3>
+                <h1 class="text-white">SERVICES</h1><br>
+                <div class="row hero">
+                    <div class="col-4 col-md-4 col-lg-4 d-none d-lg-block d-md-block">
+                        <img src="./img/007-paint-roller-1.svg" alt="painting" class="py-3">
+                        <h4 class="text-white">Painting</h4>
+                    </div>
+                    <div class="col-4 col-md-4 col-lg-4 d-none d-lg-block d-md-block">
+                        <img src="./img/002-cleaning-tools-1.svg" alt="cleaning" class="py-3">
+                        <h4 class="text-white">Cleaning</h4>
+                    </div>
+                    <div class="col-4 col-md-4 col-lg-4 d-none d-lg-block d-md-block">
+                        <img src="./img/009-screwdriver.svg" alt="plumbing" class="py-3">
+                        <h4 class="text-white">Plumbing</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center page2">
+        <div class="top py-5">
+            <h4 class="text-secondary text-uppercase fs-6">our services</h4>
+            <h2 class="title fs-2">How Can We Help You?</h2>
+            <div class="explaination">We specialize in making routine maintenance and emergency repair experiences worry free.<br> Give us a call today to learn how simple our process truly is!</div>
+            <button class="btn btn-danger px-4 book" >BOOK NOW</button>
+        </div>
+    </section>
+    <section class="pagex">
+        <div class="container">
+            <div class="row help">
+                <div class="work col-sm-12 col-md-6 col-lg-6">
+                    <img src="./img/billionphotos1882993.jpg" alt="electrician" class="pic">
+                    <p class="description">By planning ahead you can save yourself from feeling stressed and overwhelmed. Our Repair Services is the handyman service provider trusted throughout Pennsylvania.</p>
+                </div>
+                <div class="work col-sm-12 col-md-6 col-lg-6">
+                    <h3>Need Help Right Away?</h3>
+                    <h3 class="text-danger number">Call us now: 723-123-345</h3>
+                    <img src="./img/billionphotos1883011.jpg" alt="connection" class="img-fluid pic">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page3">
+        <div class="evening container">
+            <div class="image-side">
+                <img src="./img/billionphotos1079319min.png" alt="smiling" class="pic" width="500px">
+            </div>
+            <div class="text-side">
+                <h1 class="quality border-bottom border-5 border-danger pb-3">Best Quality</h1><br>
+                <p class="company">Company works with homeowners, contractors, realtors, <br>and residential building managers to help maintain, <br>upgrade, and repair properties</p>
+                <button class="btn btn-danger px-4 now">BOOK NOW</button>
+            </div>
+        </div>
+    </section>
+    <section class="page4 container">
+        <h2 class="services">Our Services</h2>
+        <div class="row long d-flex">
+            <div class="brush">
+                <img src="./img/005-painter-brush.svg" alt="painting" class="ico py-3">
+                <h4 class="icon">Painting</h4>
+                <p>We'll send a multi-skilled repairman to<br> your residential or commercial property<br> so you save the time and...</p>
+            </div>
+            <div class="wire">
+                <img src="./img/003-wire.svg" alt="electrical" class="ico py-3">
+                <h4 class="icon">Electrical</h4>
+                <p>We'll send a multi-skilled repairman to<br> your residential or commercial property<br> so you save the time and...</p>
+            </div>
+            <div class="screw">
+                <img src="./img/009-screwdriver.svg" alt="plumbing" class="ico py-3">
+                <h4 class="icon">Repair</h4>
+                <p>We'll send a multi-skilled repairman to<br> your residential or commercial property<br> so you save the time and...</p>
+            </div>
+        </div>
+    </section>
+    <section class="page">
+        <div class="test help">
+            <div class="night">
+                <p class="about">ABOUT US</p>
+                <h1 class="detal">Plumbing Services</h1>
+            </div>
+            <div class="image-container">
+                <img src="./img/frg.jpg" alt="tye" width="230px" class="pics">
+                <img src="./img/rg.jpg" alt="staff" width="230px" class="pics">
+                <img src="./img/billionphotos1882993.jpg" alt="fix" width="230px" class="pics">
+                <img src="./img/billionphotos1882951.jpg" alt="tight" width="230px" class="pics">
+            </div>
+        </div>
+    </section>
+    <section class="page6">
+        <h1 class="todo">Get your 'TO DO' list completed by a real<br> professional!</h1>
+        <p class="mission">We’re on a mission to help build long-lasting<br> brands that shape and define an entire industry<br> through thoughtful design.</p>
+        <button class="btn btn-danger px-4 now">BOOK NOW</button> 
+        <span>
+            <button class="btn px-4 call">CALL US</button>
+        </span>
+    </section>
 
-}
-@media (max-width: 769px){
-    .page1{
-        background-position: 60% 50%;
-        background-size: cover;
-    }
-    
-    .hero-text h3{
-        font-size: 45px;
-        font-weight: 250;
-    }
-    .hero-text h1{
-        font-weight: 850;
-        font-size: 75px;
-    }
-    .page2{
-        padding-bottom: 100px;
-    }
-    .help{
-        flex-direction: column;
-    }
-    .quality{
-        font-size: 25px;
-    }
-    .work{
-        width: 100%;
-        flex-direction: column;
-    }
-    .pic{
-        width: 100%;
-    }
-    .pagex .work p{
-        margin-bottom: 20px;
-    }
-    .page{
-        height: 100%;
-    }
-    .about, .detal, .image-container{
-        width: 100%;
-    }
-}
-@media (max-width: 426px){
-    .page1{
-        background-position: 81.49% 50%;
-        height: 130vh;
-    }
-    .hero-text h3{
-        font-size: 40px;
-        font-weight: 250;
-        margin-top: 5em;
-        font-size: 2.25rem;
-    }
-    .hero-text h1{
-        font-size: 3.6rem;
-        font-weight: 700;
-    }
-    .page1 .hero{
-        display: none;
-    }
-    .pagex{
-        padding: 100px 0;
-    }
-    .page3 .image-side,
-    .page3 .text-side {
-        width: 100%;
-    }
-    .night{
-        margin: 30px 0;
-    }
-    .evening{
-        flex-direction: column;
-    }
-    .quality{
-        margin-top: 4em;
-    }
-    .long{
-        flex-direction: column;
-        width: 100%;
-    }
-    .wire{
-        width: 100%;
-    }
-    .brush{
-        width: 100%;
-    }
-    .screw{
-        width: 100%;
-    }
-    .pics{
-        width: 320px;
-    }
-    .description{
-        margin: 55px 0;
-    }
-}
-@media (max-width: 320px){
-    .hero-text{
-        text-align: center;
-        justify-content: center;
-        padding-left: 0;
-        width: 100%;
-    }
-    .page1 .hero{
-        display: none;
-    }
-    .hero-text h3{
-        font-size: 35px;
-        font-weight: 100;
-    }
-    .hero-text h1{
-        font-weight: 600;
-        font-size: 55px;
-    }
-    .pics{
-        width: 250px;
-    }
-}
+    <script src="./script/bootstrap.min.js"></script>
+</body>
+</html>
