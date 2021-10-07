@@ -244,6 +244,14 @@
         margin: 55px 0;
     }
 }
+@media (max-width:375px){
+    .about, .detal, .image-container{
+        width: 100%;
+    }
+    .image-container{
+        margin-left: 0;
+    }
+}
 @media (max-width: 320px){
     .hero-text{
         text-align: center;
