@@ -265,4 +265,13 @@
     .pics{
         width: 250px;
     }
+    .about, .detal, .image-container{
+        width: 100%;
+    }
+    .detal{
+        font-size: 65px;
+    }
+    .image-container{
+        margin-left: 0;
+    }
 }
